@@ -26,5 +26,13 @@ class FuncionesTest extends TestCase
     {
         $result = $this->funciones->es_par(2);
         $this->assertEquals(true, $result);
+		
+		$result = $this->funciones->es_par(5); 
+		$this->assertEquals(false, $result);
+		
+		$result = $this->funciones->es_par(0); 
+		$this->assertEquals(true, $result);
+		
+
     }
 }
